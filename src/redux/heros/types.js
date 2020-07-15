@@ -1,0 +1,1 @@
+export const UPDATE_LIST = '@heros/UPDATE_LIST';

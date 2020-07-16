@@ -43,7 +43,7 @@ export const fetchHeroes = () => {
       const heroes = response.data.data.results;
       const {total} = response.data.data;
 
-      dispatch(updateList([...list, ...heroes], 40));
+      dispatch(updateList([...list, ...heroes], total));
     } catch (error) {
       Alert.alert('Error', error.message || 'Ha ocurrido un error');
     } finally {

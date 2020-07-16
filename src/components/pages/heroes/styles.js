@@ -4,6 +4,6 @@ import colors from '../../../assets/colors';
 export default StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: colors.mainBackground,
+    backgroundColor: colors.white,
   },
 });

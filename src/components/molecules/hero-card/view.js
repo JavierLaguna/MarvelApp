@@ -14,8 +14,8 @@ function HeroCard(props) {
       onPress={() => {
         onPress(hero);
       }}>
-      <Image source={imageSrc} style={styles.image} />
       <Text style={styles.title}>{hero.name}</Text>
+      <Image source={imageSrc} style={styles.image} />
     </TouchableOpacity>
   );
 }

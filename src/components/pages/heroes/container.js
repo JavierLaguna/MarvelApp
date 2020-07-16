@@ -10,6 +10,7 @@ import {
 } from '../../../redux/heroes/selectors';
 import {HeroCard} from '../../molecules';
 import colors from '../../../assets/colors';
+import {Actions} from 'react-native-router-flux';
 
 export default function Heroes(props) {
   const dispatch = useDispatch();
@@ -26,7 +27,14 @@ export default function Heroes(props) {
     dispatch(heroesActions.initList());
   };
 
-  const renderListItem = ({item}) => <HeroCard hero={item} />;
+  const onSelectHero = (hero) => {
+    dispatch(heroesActions.setItem(hero));
+    Actions.push('HeroDetail', {title: hero.name});
+  };
+
+  const renderListItem = ({item}) => (
+    <HeroCard hero={item} onPress={onSelectHero} />
+  );
 
   const onEndReached = () => {
     if (!loading && heroes.length < total) {

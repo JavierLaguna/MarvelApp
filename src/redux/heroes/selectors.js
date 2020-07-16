@@ -17,3 +17,5 @@ export const selectLoading = createSelector(
   selectReducer,
   (state) => state.loading,
 );
+
+export const selectHero = createSelector(selectReducer, (state) => state.item);

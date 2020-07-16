@@ -4,6 +4,7 @@ export const initialState = {
   list: [],
   total: 0,
   loading: false,
+  item: null,
 };
 
 export default function reducer(state = initialState, action = {}) {
@@ -13,6 +14,9 @@ export default function reducer(state = initialState, action = {}) {
 
     case types.SET_LOADING:
       return {...state, loading: action.payload.loading};
+
+    case types.SET_ITEM:
+      return {...state, item: action.payload.item};
 
     default:
       return state;

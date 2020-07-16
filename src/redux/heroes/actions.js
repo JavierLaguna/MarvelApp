@@ -16,6 +16,13 @@ export const setLoading = (loading) => {
   };
 };
 
+export const setItem = (item) => {
+  return {
+    type: types.SET_ITEM,
+    payload: {item},
+  };
+};
+
 export const initList = () => {
   return async (dispatch, getState) => {
     dispatch(updateList([], 0));

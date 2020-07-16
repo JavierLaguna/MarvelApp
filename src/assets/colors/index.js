@@ -1,7 +1,7 @@
 const colors = {
   mainBackground: '#fafafa',
-  tint: '#f90606',
-  main: 'blue',
+  main: '#256697',
+  tint: '#AF1F24',
   white: 'white',
 };
 

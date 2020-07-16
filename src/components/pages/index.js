@@ -1,2 +1,2 @@
 export {default as Splash} from './splash';
-export {default as Heros} from './heros';
+export {default as Heroes} from './heroes';

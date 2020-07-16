@@ -7,8 +7,8 @@ const instance = axios.create({
   headers: {'Content-type': 'application/json'},
 });
 
-export const getHeros = () => {
-  const stringParmas = qs.stringify({...API_KEY}, {skipNulls: true});
+export const getHeroes = (params) => {
+  const stringParmas = qs.stringify({...API_KEY, ...params}, {skipNulls: true});
   const url = `/v1/public/characters?${stringParmas}`;
 
   return instance.get(url);

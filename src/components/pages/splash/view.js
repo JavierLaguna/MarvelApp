@@ -6,7 +6,7 @@ import {Actions} from 'react-native-router-flux';
 export default function Splash(props) {
   useEffect(() => {
     setTimeout(() => {
-      Actions.replace('Heros');
+      Actions.replace('Heroes');
     }, 1000);
   }, []);
 

@@ -46,7 +46,7 @@ export default function Heroes(props) {
     <SafeAreaView style={styles.container}>
       <FlatList
         data={heroes}
-        keyExtractor={(item) => `hero-${item.id}`}
+        keyExtractor={(item) => `hero-${item.name}`}
         renderItem={renderListItem}
         refreshControl={
           <RefreshControl

@@ -13,3 +13,19 @@ export const getHeroes = (params) => {
 
   return instance.get(url);
 };
+
+// MOCK METHOD
+export const postHero = (params) => {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      const newHero = {
+        name: params.name,
+        description: params.description,
+        thumbnail: {
+          path: params.image.uri,
+        },
+      };
+      resolve(newHero);
+    }, 2500);
+  });
+};

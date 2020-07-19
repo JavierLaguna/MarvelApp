@@ -10,6 +10,9 @@ export default StyleSheet.create({
     marginVertical: 20,
     marginHorizontal: 16,
   },
+  imageContainer: {
+    marginBottom: 20,
+  },
   input: {
     marginVertical: 6,
   },

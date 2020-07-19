@@ -3,6 +3,7 @@ import {Text, View, TextInput} from 'react-native';
 import styles from './styles';
 import PropTypes from 'prop-types';
 import colors from '../../../assets/colors';
+import {ErrorLabel} from '../index';
 
 function Input(props) {
   const {value, onChangeText, placeholder, label, style, error} = props;
@@ -18,7 +19,7 @@ function Input(props) {
         underlineColorAndroid="transparent"
         onChangeText={onChangeText}
       />
-      {error !== '' && <Text style={styles.error}>{error}</Text>}
+      <ErrorLabel error={error} />
     </View>
   );
 }

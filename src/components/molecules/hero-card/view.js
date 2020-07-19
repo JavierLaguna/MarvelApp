@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import {TouchableOpacity, Text, Image} from 'react-native';
 import styles from './styles';
 import PropTypes from 'prop-types';
@@ -6,7 +6,10 @@ import PropTypes from 'prop-types';
 function HeroCard(props) {
   const {hero, onPress} = props;
 
-  const imageSrc = {uri: `${hero.thumbnail.path}.${hero.thumbnail.extension}`};
+  const imagePath = hero.thumbnail.extension
+    ? `${hero.thumbnail.path}.${hero.thumbnail.extension}`
+    : hero.thumbnail.path;
+  const imageSrc = {uri: imagePath};
 
   return (
     <TouchableOpacity

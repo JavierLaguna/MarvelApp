@@ -21,11 +21,4 @@ export default StyleSheet.create({
     borderWidth: 1,
     overflow: 'hidden',
   },
-  error: {
-    color: colors.tint,
-    fontSize: 12,
-    textAlign: 'right',
-    marginTop: 6,
-    fontWeight: '600',
-  },
 });

@@ -30,7 +30,10 @@ export default function HeroDetail(props) {
     );
   };
 
-  const imageSrc = {uri: `${hero.thumbnail.path}.${hero.thumbnail.extension}`};
+  const imagePath = hero.thumbnail.extension
+    ? `${hero.thumbnail.path}.${hero.thumbnail.extension}`
+    : hero.thumbnail.path;
+  const imageSrc = {uri: imagePath};
   const {description, comics, series, stories, events} = hero;
 
   return (

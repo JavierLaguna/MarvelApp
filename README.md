@@ -5,10 +5,10 @@
 
 > MarvelApp is a practice of 'React-Native' for KeepCoding Mobile 10
 
-![Splash](/captures/splash.PNG)
-![Heroes List](/captures/heroes-list.PNG)
-![Hero Detail](/captures/hero-detail.PNG)
-![Create Hero](/captures/create-hero.PNG)
+![Splash](/captures/splash.png)
+![Heroes List](/captures/heroes-list.png)
+![Hero Detail](/captures/hero-detail.png)
+![Create Hero](/captures/create-hero.png)
 
 ## Description
 
